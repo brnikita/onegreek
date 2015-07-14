@@ -1,0 +1,19 @@
+<ion-view class="text-center" view-title="onegreek">
+    <ion-content  class="onegreek-white register">
+        <div class="list list-inset list-light list-transparent myInput">
+            <label class="text-center gradientInput">
+                <p>Please enter your code</p>
+                <input type="tel" data-ng-model="user.phoneCode" placeholder="0000" data-ng-click="onTextApproveClick()">
+            </label>
+            <br/>
+            <div class="overButton" data-ng-style="{'margin-top': bowtieMarginTop + 'px'}">
+                <button type="submit" data-ng-click="approveCode()" class="userSubmitPhone">
+                    <div class="bowtie" data-ng-class="{'displayBlock': clickedOnInputApprovePhone}" data-ng-cloak>
+                        <div class="bowtieWhite"></div>
+                    </div>
+                </button>
+            </div>
+        </div>
+        <p class="bottomText" data-ng-style="{top: iframeHeight + 'px'}" data-ng-class="{'displayBlock': clickedOnInputApprovePhone}" data-ng-cloak>By Clicking the Bowtie you agree to OneGreek's <a href="#">terms of service</a></p>
+    </ion-content>
+</ion-view>

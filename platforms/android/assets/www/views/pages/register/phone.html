@@ -1,0 +1,14 @@
+<ion-view class="text-center" view-title="onegreek">
+    <ion-content  class="onegreek-white register">
+        <div class="redQuestion" data-ng-class="{'showRedQuestion': showRedQuestion}" data-ng-cloak>Are you sure that's ten digits?</div>
+        <div class="list list-inset list-light list-transparent myInput">
+            <label class="text-center gradientInput">
+                <p>Please enter your digits</p>
+                <input type="tel" data-ng-model="user.phone" placeholder="i.e. 503-467-6917" data-ng-click="onTextClick()">
+            </label>
+            <br/>
+            <div class="overButton" data-ng-style="{'margin-top': bowtieMarginTop + 'px'}" data-ng-cloak><button type="submit" data-ng-click="submitPhone()" class="userSubmitPhone"><div class="bowtie" data-ng-class="{'displayBlock': clickedOnInputPhone}" data-ng-cloak><div data-ng-class="{'bowtieColor': onTextClickBowtie}" class="bowtieWhite"></div></div></button></div>
+        </div>
+        <p class="bottomText" data-ng-style="{top: iframeHeight + 'px'}" data-ng-class="{'displayBlock': clickedOnInputPhone}" data-ng-cloak>By Clicking the Bowtie you agree to OneGreek's <a href="#">terms of service</a></p>
+    </ion-content>
+</ion-view>
